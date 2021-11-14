@@ -1,0 +1,11 @@
+# Bazel
+bazel-*
+
+# Editor backup files
+*.DS_Store
+*~
+*.orig
+[#]*[#]
+.[#]*
+*.swp
+
