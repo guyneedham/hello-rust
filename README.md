@@ -10,6 +10,12 @@ Ok maybe my definition of fun is different to yours, but Rust and Bazel are pret
 
 I want to get to being able to codegen a hello world message and have `cargo check` run over my Bazel-ified Rust code base.
 
+## Setup
+
+We're using nix and direnv to control the Rust, Bazel, and Cargo versions. You'll need to install direnv and then run `direnv allow`.
+
+Install direnv: https://direnv.net/
+
 ## Useful commands
 
 Lint your code with `./tools/build/verify_rust.sh`.
