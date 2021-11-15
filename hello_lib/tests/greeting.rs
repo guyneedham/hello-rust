@@ -1,6 +1,7 @@
 extern crate hello_lib;
 
-fn main() {
+#[test]
+fn test_greeting() {
     let hello = hello_lib::greeter::Greeter::new("Hello");
-    println!("{}", hello.greet("world"));
+    assert_eq!("Hello world", hello.greet("world"));
 }

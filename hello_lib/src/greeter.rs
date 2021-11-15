@@ -4,11 +4,12 @@ pub struct Greeter {
 
 impl Greeter {
     pub fn new(greeting: &str) -> Greeter {
-        Greeter { greeting: greeting.to_string(), }
+        Greeter {
+            greeting: greeting.to_string(),
+        }
     }
 
-    pub fn greet(&self, thing: &str) {
-        println!("{} {}", &self.greeting, thing);
+    pub fn greet(&self, thing: &str) -> String {
+        format!("{} {}", &self.greeting, thing)
     }
 }
-
